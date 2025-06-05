@@ -1,7 +1,7 @@
 # To Do List
 
 <p align="center">
-  <img src="to_do_list_logo.png" width="350">
+  <img src="to_do_list_logo.png" width="500">
 </p>
 
 <p>Project developed to act as personal To - Do List<br>
