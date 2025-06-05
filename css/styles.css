@@ -1,0 +1,185 @@
+/* Zerando Tudo */
+body, h1, p, span {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #2f3440;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    margin-top: 5vh;
+}
+
+/* armazenamento da TO-DO */
+
+#todo-content {
+    background-color: #3f5666;
+    max-width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vh;
+    font-size: 15px;
+    padding: 20px;
+}
+
+#todo-content h2 {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Configurando botão de adicionar tarefa */
+
+#add-to-to {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #2f3440;
+    border: none;
+    align-items: center;
+}
+
+#write-item, #send-item {
+    background-color: #f5e5c0; 
+    display: inline-block;
+    width: 85%;
+}
+
+#write-item {
+    padding: 10px;
+    min-height: 20px;
+    line-height: 20px;
+    font-size: 16px;
+}
+
+#send-item {
+    width: 13%;
+    min-height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#send-item:hover {
+    color: #f5e5c0;
+    background-color: #2f3440;
+}
+
+#task-form {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;   
+}
+
+/* Configurando Template tarefas */
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    background-color: #2f3440;
+    border-radius: 8px;  
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 8px; 
+
+}
+
+.task i {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.task .fa-check{
+    text-align: center;
+    border: 1px solid #f5e5c0;
+    color: #f5e5c0;
+    font-weight: bold;
+    border-radius: 50%;
+    margin-left: 8px;
+    margin-right: 5px;
+}
+
+/* Quando minha tarefa estiver pronta, eu vou ter uma classe DONE */
+/* POSSO HABILITAR E DESABILITAR O BOTÃO E ELE VAI MUDAR DE COR */
+
+.task .fa-check.done {
+    color: #13e600;
+    border: 1px solid #13e600;
+}
+
+.task .fa-check:hover {
+    color: #c50000;
+    border: 1px solid #c50000;
+}
+
+.task .fa-trash{
+    text-align: center;
+    color: #f5e5c0;
+    font-weight: bold;
+}
+
+.task .fa-trash:hover{
+    color: #c50000;
+}
+
+.task span {
+    padding: 10px;
+    min-height: 20px;
+    width: 100%;
+    line-height: 20px;
+    font-size: 18px;
+    color: #f5e5c0;
+}
+
+/* Com isso, vamos fazer com que a lixeira só fique visível*/
+/* eu colocar o mouse em cima da task */
+.hide {
+    display: none;
+}
+
+.task:hover .hide {
+    display: block;
+}
+/* Configurando NO TASK */
+#no-tasks {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #f5e5c0;
+    text-align: center;
+}
+
+/* MOBILE */
+@media(max-width:480px) {
+
+    body {
+        padding: 20px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    #todo-content {
+    background-color: #3f5666;
+    max-width: 100%;
+    margin-top: 2vh;
+    }
+
+    .task .fa-trash {
+        display: block !important;
+    }
+
+}

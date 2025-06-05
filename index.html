@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do List</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href='css/styles.css'>
+</head>
+<body>
+    <h1>To Do List</h1>
+    <div id='todo-content'>
+        <h2>Add Tasks:</h2>
+        <div id="add-to-to">
+            <form id='task-form' action="">
+                <input type='text' name="task", id="write-item" placeholder="Type your task here...">
+                <button type="submit" id='send-item'><i class="fa fa-plus"></i></button>
+            </form>
+            
+        </div>
+        <h2>View Your Tasks:</h2>
+        
+        <div id="task-content">
+        <!-- INÍCIO TEMPLATE -->
+         <!-- Como a TASK não vem no DEFAULT, vamos adicionar a ela a classe hide -->
+            <div class="task hide">
+                <i class="fas fa-check"></i>
+                <span class="task-title">Task Title</span>
+                <i class="fas fa-trash hide"></i>
+            </div>
+        <!-- FIM DO TEMPLATE -->
+        <p id="no-tasks">No tasks registered.</p>    
+        </div>    
+    </div>
+    
+    <script src='js/scripts.js'></script>
+</body>
+</html>
