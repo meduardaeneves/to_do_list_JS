@@ -12,4 +12,4 @@ You can do the following:
   <li>Check if task is completed</li>
   <li>Remove task</li>
 </ul>
-<p>To access the project click <a href='https://basic-calculator-plum-xi.vercel.app/'>here</a> </p>
+<p>To access the project click <a href='https://to-do-list-js-dusky.vercel.app/'>here</a> </p>
